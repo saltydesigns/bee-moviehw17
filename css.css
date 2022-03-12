@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --white:#ffffff;
+    --yellow:#DFFA38;
+    --drk-gry:#333;
+    --black: #000;
+    --bg:#333;
+    --text:#DFFA38;
+    --footer-bg:#DFFA38;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Palanquin', sans-serif;
+    font-size: 16px;
+}
+
+/* text & color styles */
+    h1 {
+        font-size: 67.34px;
+    }
+    h2 {
+        font-size: 50.52px;
+    }
+    h3 {
+        font-size: 37.9px;
+    }
+    h4 {
+        font-size: 28.43px;
+    }
+    h5 {
+        font-size: 21.33px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+
+    .black {
+        color: var(--black);
+    }
+
+/* navigation */
+    header {
+        padding:20px;
+    }
+    nav {
+        width: 100%;
+        padding: 1%;
+    }
+    .nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        float: right;
+        list-style: none;
+        height: 100%;
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        margin:0;
+        padding:0;
+        align-items: center;
+        vertical-align: top;
+    }
+
+    nav li, nav a {
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 21.33px;
+        text-decoration: none;
+        color: #DFFA38;
+    }
+
+    #logo {
+        display: inline-block;
+        width: 14%;
+        height: 52px;
+        padding: 1%;
+        background-image: url("./images/logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        vertical-align: top;
+    }
+
+/* homepage */
+    #container {
+        height: 700px;
+        margin: 0 auto;
+        position: static;
+        width: 1100px;
+    }
+
+    #hero-img {
+        background-image: url("./images/bee1.png");
+        width: 820px;
+        height: 617px;
+        z-index: -1;
+        left: 50px;
+    }
+
+    .cta {
+        position: absolute;
+        top: 20%;
+        right: 20%;
+        z-index: 1;
+    }
+
+    button {
+        color: var(--black);
+        background-color: var(--yellow);
+        border: none;
+        padding: 10px 15px;
+        font-family: 'Palanquin', sans-serif;
+        font-weight: 700;
+        font-size: 53px;
+    }
+
+    .cta .black {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--yellow);
+    }
+
+    .cta h1 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--black);
+    }
+
+
+/* footer */
+    footer {
+        background: linear-gradient(180deg, #333333 0%, #BFD537 38.54%, #DFFA38 100%);
+        color: var(--drk-gry);
+        font-family: 'Palanquin';   
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21.33px;
+    }
+
+    .foot-wrapper {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top:20px;
+    }
+
+    .socials {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foot-item {
+        padding: 3%;
+    }
+
+    footer li, footer a {
+        color: var(--black);
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        font-size: 21.33px;
+    }
