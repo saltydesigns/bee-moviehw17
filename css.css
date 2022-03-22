@@ -346,6 +346,11 @@ a {
         padding:3%;
     }
 
+    .sticky {
+        position: sticky;
+        top:0;
+    }
+
     .skillsText {
         padding:3%;
     }
