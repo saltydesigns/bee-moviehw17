@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bortfolio ~ Skills</title>
+        <title>Barry B. Benson's Bortfolio</title>
         <link rel="stylesheet" href="css.css" type="text/css">
         <link rel="icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(function() {
+                
+                $(".toggle").on("click", function (){
+
+                    if($(".item").hasClass("active")){
+                        $(".item").removeClass("active");
+                    }
+                    else{
+                        $(".item").addClass("active");
+                    }
+
+                });
+
+            });
+        </script>
     </head>
 
     <body>
-        <header>
-            <nav class="nav-wrapper">
-                <div id="logo" onclick="window.location.href='index.html';">
-                </div>
-                    <ul class="menu">
-                        <li class="nav-item"><a href="about.html">Bee Bio</a></li>
-                        <li class="nav-item"><a href="skills.html">Honey Skills</a></li>
-                        <li class="nav-item"><a href="https://en.wikipedia.org/wiki/Meme">Bee! Legal Zone</a></li>
-                    </ul>
-            </nav>
-        </header>
+        <nav>
+            <ul class="menu">
+                <li class="logo" id="logo" onclick="window.location.href='index.html';"></li>
+                <li class="item"><a href="about.html">Bee Bio</a></li>
+                <li class="item"><a href="skills.html">Honey Skills</a></li>
+                <li class="item"><a href="https://en.wikipedia.org/wiki/Meme" target="_blank" rel="noopener noreferrer">Bee! Legal Zone</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
 
         <section class="aboutMe">
             <h1>The name's Benson. Barry "Bee" Benson.</h1>
-            <p>
-                A honey-bee with a law degree and ten years of honey-making experience.
-                <br>
-                A bee lawyer!?! you scream at your screen. I hear you, pal.
-                <br>
-                But I’m certified in over 6 states for bug and human legal matters.
-            </p>
-            <button>My Resume</button>
-            <div class="aboutImg"></div>
+            <div class="aboutContent">
+                <div class="aboutText">
+                    <p>
+                        A honey-bee with a law degree and ten years of honey-making experience.
+                        <br><br>
+                        <span class="yellow">A bee lawyer!?!</span> you scream at your screen. I hear you, pal.
+                        <br><br>
+                        But I’m certified in over 6 states for bug and human legal matters.
+                    </p>
+                    <button type="button" onclick="window.open('https://www.imdb.com/title/tt0389790/','_blank')">My Resume</button>
+                </div>
+                <img src="images/bee4.png" alt="Barry Bursts thr the screen to ask if you like jazz" style="object-fit:cover" class="aboutImg">
+            </div>
         </section>
 
+        <footer class="foot-wrapper">
+            <ul class="socials">
+                <li class="foot-item"><a href ="#">StungIn</a></li>
+                <li class="foot-item"><a href ="#">Buzzer</a></li>
+                <li class="foot-item"><a href ="#">Bumble</a></li>
+                <li class="foot-item"><a href ="#">FaceBuzz</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
