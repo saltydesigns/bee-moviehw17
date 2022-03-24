@@ -5,23 +5,6 @@
         <link rel="stylesheet" href="css.css" type="text/css">
         <link rel="icon" href="images/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(function() {
-                
-                $(".toggle").on("click", function (){
-
-                    if($(".item").hasClass("active")){
-                        $(".item").removeClass("active");
-                    }
-                    else{
-                        $(".item").addClass("active");
-                    }
-
-                });
-
-            });
-        </script>
     </head>
 
     <body>
@@ -55,7 +38,29 @@
                     <li class="foot-item"><a href ="#">FaceBuzz</a></li>
                 </ul>
         </footer>
+
+        <div class="preloader">
+            <img src="images/tennis.png">
+        </div>
+
     </body>
+    <script src="bee.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+                $(function() {
+                    
+                $(".toggle").on("click", function (){
+
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+
+            });
+
+        });
     </script>
 </html>
